@@ -45,3 +45,15 @@ Data Organization: Logical folder structure in S3 for easy data management.
 Real-Time Transformation: Processes data as soon as it is ingested.
 
 Advanced Querying: Use Athena for SQL-based queries and insights.
+
+### Install Packages
+```
+pip install pandas
+
+pip install numpy
+
+pip install spotipy
+```
+### Project Execution Flow
+
+Extract Data from API -> Lambda Trigger (every 1 hour) -> Run Extract Code -> Store Raw Data -> Trigger Transform Function -> Transfrom Data and Load It -> Query Using Athena
